@@ -391,7 +391,6 @@ a {
   .dropdown-content {
     display: none;
     background: var(--gradient-features-background);
-    backdrop-filter: blur(10px);
     width: 30vw;
   }
 
