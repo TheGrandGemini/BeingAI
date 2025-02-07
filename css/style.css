@@ -41,9 +41,6 @@ body {
 a {
   text-decoration: none;
 }
-img {
-  width: 50vw;
-}
 
 .header {
   height: 10vh;
@@ -205,7 +202,7 @@ img {
 .feature-container,
 .feature,
 .value-container {
-  background-color: hsla(276, 67%, 6%, 0.5);
+  background: hsla(276, 67%, 6%, 0.5);
   margin-bottom: 20px;
   border-radius: 10px;
   font-size: 1.3rem;
@@ -306,7 +303,7 @@ img {
 
 .roadmap-container img {
   width: 90vw;
-  max-height: 70vh;
+  /* max-height: 70vh; */
 }
 
 .footer-section {
