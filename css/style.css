@@ -391,7 +391,7 @@ a {
   .dropdown-content {
     display: none;
     background: var(--gradient-features-background);
-    width: 30vw;
+    width: 37vw;
   }
 
   .desktop-list-container:hover .dropdown-content {
