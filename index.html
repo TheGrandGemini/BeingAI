@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BeingAI is an open-source platform for AI-driven web development, enabling seamless coding, deployment, and integration with WebContainers. Build, test, and launch full-stack apps directly from an AI-powered chat interface. 🚀"
+    />
+    <meta name="author" content="https://x.com/0xgemini0" />
+    <title>Being AI</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/main.js"></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/b5fe4caa6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <img
+          src="/images/beirngAILogo.png"
+          alt="being AI logo"
+          loading="lazy"
+          class="logo"
+        />
+      </div>
+      <nav class="nav">
+        <div class="menuBar">
+          <div class="sandwichBar" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <ul class="mobile-list-container">
+          <li class="mobile-list list"><a href="#">About us</a></li>
+          <li class="mobile-list list">
+            <a href="#features">Why Choose Us</a>
+          </li>
+          <li class="mobile-list list"><a href="#roadmap">Roadmap</a></li>
+          <li class="mobile-list list"><a href="#values">Core Values</a></li>
+          <li class="mobile-list list">
+            <a href="#connect">Connect with us</a>
+          </li>
+          <li class="list agent-list">
+            <a href="https://beingai.online/agents">Agents</a>
+          </li>
+        </ul>
+
+        <ul class="desktop-list-container">
+          <li class="desktop-list main-list list-dropbtn">
+            <a href="#">Home <i class="fa fa-caret-down down"></i> </a>
+          </li>
+          <div class="dropdown-content">
+            <li class="desktop-list dropdwn-list"><a href="#">About us</a></li>
+            <li class="desktop-list dropdwn-list">
+              <a href="#features">Why Choose Us</a>
+            </li>
+            <li class="desktop-list dropdwn-list">
+              <a href="#roadmap">Roadmap</a>
+            </li>
+            <li class="desktop-list dropdwn-list">
+              <a href="#values">Core Values</a>
+            </li>
+            <li class="desktop-list dropdwn-list">
+              <a href="#connect">Connect with us</a>
+            </li>
+          </div>
+          <li class="desktop-list main-list">
+            <a href="https://beingai.online/agents">Agents</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="hero-section section">
+        <h1 class="hero-heading heading">
+          The Future of <span class="heading-span">AI Agents</span>
+        </h1>
+
+        <div class="hero-paragraph-container">
+          <p class="first-hero-paragraph hero-paragraph">
+            Create, deploy and manage intelligent AI agents that transform the
+            way you work.
+          </p>
+          <p class="second-hero-paragraph hero-paragraph">
+            Powered by Olama and other LLM models and seamless integration.
+          </p>
+        </div>
+
+        <div class="get-started-container">
+          <p class="get-started button">
+            <a href="https://app.beingai.online/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
+                ></path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+              </svg>
+              <span class="get-started-span">Get Started</span></a
+            >
+          </p>
+        </div>
+
+        <div class="token-info-container">
+          <p class="token-info">
+            <a
+              href="https://raydium.io/swap/?outputCurrency=FdzVFSP9KX58GzpJywdqhAmADr3XTEypawHyenShpump&referrer=6tvwZLkMWj9qZNu8YoquKNde8RJXk1fofgaAyJkWMC5f&inputMint=sol&outputMint=4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R"
+            >
+              <span class="token-address">
+                FdzVFSP9KX58GzpJywdqhAmADr3XTEypawHyenShpump
+              </span>
+            </a>
+            <i class="fa-solid fa-copy fa-2x" onclick="copyAddress()"></i>
+          </p>
+        </div>
+
+        <article class="hero-features-container container" id="About">
+          <section class="feature-container">
+            <div class="agent icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 8V4H8"></path>
+                <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                <path d="M2 14h2"></path>
+                <path d="M20 14h2"></path>
+                <path d="M15 13v2"></path>
+                <path d="M9 13v2"></path>
+              </svg>
+            </div>
+            <h3 class="hero-features-heading">Smart Agents</h3>
+            <p class="hero-features-paragraph">
+              AI-powered agents that learn and adapt to your needs.
+            </p>
+          </section>
+          <section class="feature-container">
+            <div class="AI icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"
+                ></path>
+                <path d="M5 3v4"></path>
+                <path d="M19 17v4"></path>
+                <path d="M3 5h4"></path>
+                <path d="M17 19h4"></path>
+              </svg>
+            </div>
+            <h3 class="hero-features-heading">Advanved AI</h3>
+            <p class="hero-features-paragraph">LLM machine learning modules.</p>
+          </section>
+          <section class="feature-container">
+            <div class="integration icon-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"
+                ></path>
+                <path
+                  d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"
+                ></path>
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
+                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
+                <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
+                <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
+                <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
+                <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
+              </svg>
+            </div>
+            <h3 class="hero-features-heading">Easy integration</h3>
+            <p class="hero-features-paragraph">
+              Seamlessly integrate with your existing workflows.
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <section class="features-section" id="features">
+        <div class="features-heading-container heading-container">
+          <h2 class="features-heading heading">
+            Why Choose <span class="heading-span">Being Ai</span> ?
+          </h2>
+          <p class="features-paragraph heading-paragraph">
+            Powerful features that set us apart
+          </p>
+        </div>
+
+        <article class="features-container">
+          <section class="fast-feature feature">
+            <div class="icon-container fast">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                ></polygon>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Lightning Fast</h3>
+            <p class="feature-paragraph">
+              Instant responses and real-time processing
+            </p>
+          </section>
+
+          <section class="secure-feature feature">
+            <div class="icon-container secure">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield w-6 h-6 text-green-400"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Secure & Private</h3>
+            <p class="feature-paragraph">Enterprise-grade security protocols</p>
+          </section>
+
+          <section class="advancedai-feature feature">
+            <div class="icon-container advancedai">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-cpu w-6 h-6 text-blue-400"
+              >
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <path d="M15 2v2"></path>
+                <path d="M15 20v2"></path>
+                <path d="M2 15h2"></path>
+                <path d="M2 9h2"></path>
+                <path d="M20 15h2"></path>
+                <path d="M20 9h2"></path>
+                <path d="M9 2v2"></path>
+                <path d="M9 20v2"></path>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Advanced AI</h3>
+            <p class="feature-paragraph">Advance Self learning models</p>
+          </section>
+          <section class="global-feature feature">
+            <div class="icon-container global">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-globe w-6 h-6 text-purple-400"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path
+                  d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                ></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
+            <h3 class="feature-heading">Global Access</h3>
+            <p class="feature-paragraph">Available worldwide 24/7</p>
+          </section>
+        </article>
+      </section>
+
+      <section class="roadmap-section" id="roadmap">
+        <div class="roadmap-heading-container heading-container">
+          <h2 class="roadmap-heading">
+            Shaping The Future Of
+            <span class="heading-span">Artificial Intelligence</span>
+          </h2>
+          <p class="heading-paragraph roadmap-paragraph">
+            We're on a mission to make AI accessible, powerful, and beneficial
+            for everyone. Join us in creating a future where AI empoers
+            humanity.
+          </p>
+        </div>
+        <div class="roadmap-container">
+          <img src="/images/roadmap.jpeg" alt="Being AI roadmap" />
+        </div>
+      </section>
+
+      <section class="values-section" id="values">
+        <div class="values-heading-container heading-container">
+          <h2 class="values-heading">
+            What are our
+            <span class="heading-span">Core Values</span> ?
+          </h2>
+        </div>
+
+        <article class="values-container">
+          <section class="value-container">
+            <div class="icon-container team">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users h-8 w-8"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="value-heading">Team First</h3>
+            <p class="value-paragraph">
+              Our diverse team of experts works together to push the boundaries
+              of AI.
+            </p>
+          </section>
+
+          <section class="value-container">
+            <div class="icon-container team">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-rocket h-8 w-8"
+              >
+                <path
+                  d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"
+                ></path>
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"
+                ></path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg>
+            </div>
+            <h3 class="value-heading">Innovation</h3>
+            <p class="value-paragraph">
+              Constantly exploring new frontiers on artificial intelligence.
+            </p>
+          </section>
+
+          <section class="value-container">
+            <div class="icon-container team">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-target h-8 w-8"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="value-heading">Purpose</h3>
+            <p class="value-paragraph">
+              Focuused on creating AI that serves humanity's best interests.
+            </p>
+          </section>
+
+          <section class="value-container">
+            <div class="icon-container team">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-award h-8 w-8"
+              >
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+            </div>
+            <h3 class="value-heading">Excellence</h3>
+            <p class="value-paragraph">
+              Committed to delivering the highest quality AI solutions.
+            </p>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer-section" id="connect">
+      <div class="flexed-footer-section">
+        <section class="logo-section footer-logo">
+          <div class="logo-container">
+            <img
+              src="/images/beirngAILogo.png"
+              alt="Being AI logo"
+              class="logo"
+              loading="lazy"
+            />
+          </div>
+          <p class="logo-paragraph">
+            Empowering the future with intelligent AI solutions.
+          </p>
+        </section>
+
+        <section class="product-section">
+          <h3 class="product-heading">Product</h3>
+          <p class="product">
+            <a href="https://beingai.online/agents" target="_blank"
+              >AI Agents</a
+            >
+          </p>
+        </section>
+      </div>
+
+      <section class="social-links-container">
+        <div class="link-container">
+          <a href="https://x.com/beingai_" target="_blank"
+            ><i class="fa-brands fa-x-twitter fa-2x"></i
+          ></a>
+        </div>
+        <div class="link-container">
+          <a href="https://t.co/SrQpVoBE2f"
+            ><i class="fa-brands fa-telegram fa-2x"></i
+          ></a>
+        </div>
+        <div class="link-container">
+          <a href="https://github.com/B3ing-AI/BeingAI"
+            ><i class="fa-brands fa-github fa-2x"></i
+          ></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
